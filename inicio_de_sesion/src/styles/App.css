@@ -1,0 +1,25 @@
+:root {
+    --azul-marinno: #1F3B4D;
+    --cian: #17BEBB;
+    --gris-claro: #F0F0F0;
+    --blanco-puro: #FFFFFF;
+    --gris-oscuro: #515151;
+    --font-family: 'Roboto', sans-serif;
+    --sm: 14px;
+    --md: 16px;
+    --lg: 18px;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: var(--font-family);
+    font-size: var(--md);
+    background-color: var(--gris-claro);
+    color: var(--azul-marinno);
+  }
+  

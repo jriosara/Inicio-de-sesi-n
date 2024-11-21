@@ -1,0 +1,151 @@
+:root {
+  --azul-marinno: #1F3B4D;
+  --cian: #17BEBB;
+  --gris-claro: #F0F0F0;
+  --blanco-puro: #FFFFFF;
+  --gris-oscuro: #515151;
+  --font-family: 'Roboto', sans-serif;
+  --sm: 14px;
+  --md: 16px;
+  --lg: 18px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: var(--md);
+  background-color: var(--gris-claro);
+  color: var(--azul-marinno);
+}
+
+
+main {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+  }
+  
+  .login {
+    width: 10%;
+    height: 50vh;
+    display: grid;
+    place-items: center;
+  }
+  
+
+  .form-container {
+    /*Establece un estilo para el contenedor del formulario.*/
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    width: 350px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: var(--blanco-puro);
+    flex-direction: column;
+    gap: 0.1rem;
+}
+
+.form-container .container {
+    /*Establece un estilo para el contenedor del formulario.*/
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    /*Establece un estilo para el título del logo.*/
+    font-size: var(--lg);
+    color: var(--azul-marinno);
+    margin-bottom: 1.5rem;
+    justify-self: center;
+}
+
+.form {
+    /*Establece un estilo para el formulario.*/
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.form a {
+    color: var(--azul-marinno);
+    font-size: var(--sm);
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 54px;
+}
+
+label {
+    /*Establece un estilo para las etiquetas del formulario.*/
+    font-family: var(--azul-marinno);
+    font-size: 0.9rem;
+    margin-bottom: 1px;
+    display: block;
+}
+
+.input {
+    /*Establece un estilo para los campos de entrada del formulario.*/
+    background-color: var(--gris-claro);
+    height: 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: var(--md);
+    padding: 8px;
+    margin-bottom: 16px;
+}
+
+.primary-button {
+    background-color: var(--cian);
+    border-radius: 8px;
+    border: none;
+    color: var(--blanco-puro);
+    width: 100%;
+    font-size: var(--md);
+    font-weight: bold;
+    height: 35px;
+    cursor: pointer;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.secondary-button {
+    background-color: var(--gris-claro);
+    border-radius: 8px;
+    border: 1px solid var(--gris-oscuro);
+    color: var(--azul-marinno);
+    width: 100%;
+    font-size: var(--md);
+    font-weight: bold;
+    height: 35px;
+    cursor: pointer;
+    padding: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.login-button {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+input:focus {
+    /*Establece un estilo para los campos de entrada del formulario cuando están enfocados.*/
+    border-color: 1px solid var(--cian);
+}
+
+.login-button:hover {
+    background-color: var(--gris-oscuro);
+}
+
+.secondary-button:hover {
+    background-color: var(--gris-oscuro);
+    color: var(--blanco-puro);
+}
+  
